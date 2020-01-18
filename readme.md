@@ -19,7 +19,7 @@ Clone this repo and run `npm i`.
 
 The application is deployed using AWS CDK. You can find more about it [at this url](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html).
 
-After setting up CDK, all you need to do is run `npm run build` which will:
+After setting up CDK, all you need to do is run `npm run deploy` which will:
 
 - Build the typescript source code found under [src](./src)
 - Deploy the lambda function along with the CloudWatch event and the S3 Bucket using the [CDK code](./deploy.ts) included. In order to know that things are going in the right direction, this is more or less what you should see in your terminal as things progress:
@@ -37,3 +37,5 @@ After setting up CDK, all you need to do is run `npm run build` which will:
 ![aws-lambda](./images/aws-stack.png "This is how the lambda should look like in AWS")
 
 The rest will be taken care of, as AWS will start running your newly deployed lambda function and scan the RSS feed every 10 minutes for new entries.
+
+CDK generates a folder called `cdk.out` which contains the CloudFormation infrastructure code being deployed to AWS.

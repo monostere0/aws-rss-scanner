@@ -32,7 +32,7 @@
     "@aws-cdk/aws-ses": "^1.21.1",
     "@aws-cdk/aws-sns": "^1.21.1",
     "@aws-cdk/core": "^1.21.1",
-    "aws-sdk": "^2.606.0",
+    "aws-sdk": "^2.814.0",
     "relative-date": "^1.1.3",
     "rss-parser": "^3.7.3"
   }
